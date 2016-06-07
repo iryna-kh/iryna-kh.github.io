@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+ 	<title>Високосний рік</title> 
+ </head> 
+ <body> 
+ 	<script type="text/javascript"> 
+ 		 var year = Number(prompt("Введіть рік")); 
+  			if (year % 4 == 0) { 
+  				if(year % 100 !== 0){ 
+  					alert("Високосний рік"); 
+  				} 
+  				
+  				else{ 
+  					if(year % 400 == 0){ 
+  						alert("Високосний рік"); 
+  				   	} 
+  					else{ 
+   						alert("Звичай рік"); 
+   					} 
+  				} 
+  			} 
+  			else{ 
+  			alert("Звичай рік"); 
+  			} 
+</script> 
+</body> 
+</html> 
