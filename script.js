@@ -141,19 +141,5 @@ $('#fortnight').remove();
 
 
 
-function forecast_7days(city){ 
-121 		$.get('http://api.openweathermap.org/data/2.5/forecast/daily?q=' + city + '&APPID=' + APPID + '&cnt=14', function(data) { 
-122 		for(var i=0; i<14; i++){ 
-123 			$('#div_7days').append('<div id="'+i+'"><p><b><span id="date_7days' + i + '"></span></b></><p><img id="icon_7days' + i + '"></p><p>t= <span id="temp_7days_day' + i + '"></span>&#8451;</p></div>'); 
-124 			$('#date_7days' + i).html(day + i + "-0" + month) 
-125 			var temp_day= data.list[i].temp.day - 273.15; 
-126 			$('#temp_7days_day' + i).html(temp_day.toFixed(0) ); 
-127 			$('#icon_7days' + i).attr('src', 'http://openweathermap.org/img/w/' + data.list[i].weather[0].icon + '.png'); 
-128 		} 
-129 		}, 'json').done(function() { 
-130 			console.log('Request completed successfully'); 
-131 		}).fail(function() { 
-132 			console.log('Request is failure'); 
-133 		}); 
-134 	} 
+
 
