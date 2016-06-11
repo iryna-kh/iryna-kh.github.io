@@ -1,0 +1,296 @@
+body { 
+     background-image: url('../fon.png') 
+ } 
+ 
+
+
+
+#tabs-container { 
+     height: 30px; 
+     width: 100%; 
+     background-color: #ccc; 
+     border: 1px solid #898989; 
+     margin-top: 20px; 
+ } 
+ #tabs-container { 
+     height: 30px; 
+     width: 100%; 
+     background-color: #ccc; 
+     border: 1px solid #898989; 
+     margin-top: 20px; 
+ } 
+ 
+ 
+ .tabs-menu { 
+     height: 30px; 
+     margin: 0px; 
+     padding: 0px; 
+     float: left; 
+     clear: both; 
+ } 
+ 
+ 
+ .tabs-menu li { 
+     line-height: 30px; 
+     float: left; 
+     background-color: #ccc; 
+     border-right: 1px solid #898989; 
+     list-style: none; 
+ } 
+ 
+ 
+ .tabs-menu li.current { 
+     position: relative; 
+     background-color: #fff; 
+     border-bottom: 1px solid #fff; 
+     height: 30px; 
+ } 
+ 
+ 
+ .tabs-menu li a { 
+     padding-left: 30px; 
+     padding-right: 30px; 
+     text-transform: uppercase; 
+     color: #fff; 
+     text-decoration: none; 
+ } 
+ 
+ 
+ .tabs-menu .current a { 
+     color: #2e7da3; 
+ } 
+ 
+ 
+ .tab { 
+     width: 100%; 
+     border-left: 1px solid #898989; 
+     border-right: 1px solid #898989; 
+     border-bottom: 1px solid #898989; 
+     background-color: #fff; 
+     float: left; 
+ } 
+ 
+ 
+ .tab-content { 
+     padding: 20px; 
+     display: none; 
+ } 
+ 
+ 
+ #tab-1 { 
+     display: block; 
+ } 
+ 
+ 
+ #weatherprop, #weatherval { 
+     display: inline-block; 
+     padding-left: 10px; 
+     padding-right: 10px; 
+ } 
+ 
+ 
+ #weatherprop { 
+     width: 250px; 
+ } 
+ 
+ 
+ #weathervals { 
+     display: inline-block; 
+     overflow-x: auto; 
+     white-space: nowrap; 
+ } 
+ 
+ 
+ #date { 
+     display: inline-block; 
+     margin-left: 5px; 
+     margin-right: 5px; 
+     text-align: center; 
+     border: 1px solid #898989; 
+     background-color: #cccccc; 
+ } 
+ .time { 
+     display: inline-block; 
+     padding-left: 5px; 
+     padding-right: 5px; 
+     background-color: #ffffff; 
+     
+     }
+ 
+ footer{ 
+ 	border: 1px solid #2e6da4; 
+ 	min-height: 80px; 
+ 	border-top-right-radius: 15px; 
+ 	border-top-left-radius: 15px; 
+ 	background: linear-gradient(135deg, #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); 
+  	padding-top: 16px; 
+ } 
+ 
+ 
+ #socicons{ 
+     display: block; 
+     margin: auto; 
+     text-align: center; 
+ } 
+.img-hover { 
+     opacity: 0.8; 
+     box-shadow: 0 0 0.7em #726257; 
+     position: relative; 
+     width: 293px; 
+     height: 244px; 
+     margin: 10px; 
+     display:inline-block; 
+ } 
+ .img-hover:hover div{ 
+     display: block; 
+     background-color: #726257; 
+     opacity: 0.9; 
+     color: #E2D0C5; 
+ } 
+ .describe-img { 
+     position: absolute; 
+     height: 100%; 
+ 	bottom: 0; 
+ 	left: 0; 
+ 	right: 0; 
+     display: none; 
+     padding-top: 3em; 
+     font-size: 16px; 
+ } 
+ #carousel { 
+     margin-bottom: 4em; 
+ } 
+ .carousel-control.left, .carousel-control.right{ 
+     background-image: none; 
+ } 
+
+.heading-main { 
+     text-align: center; 
+     padding-top: 1.5em; 
+ } 
+    .contacts { 
+     margin-top: 4em; 
+     margin-bottom: 6em; 
+ } 
+ .info-about-me { 
+     text-align: left; 
+     padding-top: 1em; 
+     padding-left: 7em; 
+ } 
+ .btn-send { 
+     width: 300px; 
+ } 
+ .btn-send:hover { 
+     background-color: #E2D0C5; 
+     color: #726257; 
+     border: 1px solid; 
+     border-color: #726257; 
+ } 
+ fieldset { 
+     width: 350px; 
+     height: 350px; 
+     padding: 10px 10px; 
+ } 
+ .contact-form { 
+     height: 50px; 
+     position: relative; 
+ } 
+ .contact-form .input-text { 
+     width: 300px; 
+     height: 50px; 
+     border: none; 
+     float: left; 
+     padding-left: 45px; 
+     border-radius: 5px; 
+ } 
+ .contact-form .form-icon { 
+     position: absolute; 
+     margin-left: 17px; 
+     margin-top: 17px; 
+     z-index: 1; 
+ } 
+ #message { 
+     height: 150px; 
+     padding-top: 15px; 
+ } 
+ .social-block { 
+     padding: 2em; 
+     margin-bottom: 5em; 
+ } 
+ .social { 
+     width: 45px; 
+     height: 45px; 
+     text-align: center; 
+ } 
+ .social:hover { 
+     color:  #E2D0C5; 
+     background-color: #726257; 
+     border: 2px solid; 
+     border-color: #E2D0C5; 
+ } 
+ a:link { 
+     color: #726257; 
+ } 
+ a:visited { 
+     color: #726257; 
+ } 
+ #to-top { 
+ 	position: fixed; 
+     right: 5px; 
+     top: 10px; 
+ 	margin-right: 5px; 
+ 	text-align: center; 
+ } 
+ #to-top a { 
+     border: 1px solid #726257; 
+ } 
+ #to-top a:hover { 
+ 	color: #E2D0C5; 
+     background-color: #BFA895; 
+ } 
+ .for-modal { 
+     text-align: center; 
+     padding: 4em 2em; 
+     width: inherit; 
+ } 
+ .for-modal p { 
+     padding-bottom: 2em; 
+ } 
+
+    
+@media screen and (max-width: 700px) { 
+     .paragraf { 
+         padding: 3em 3em; 
+     } 
+ } 
+ @media screen and (max-width: 470px) { 
+     .paragraf { 
+         padding: 1.5em 1.5em; 
+     } 
+     .info-about-me { 
+         padding-left: 3em; 
+     } 
+     .social-block { 
+         padding-left: 1em; 
+     } 
+     #think { 
+         display: none; 
+     } 
+     .list-inline h4 { 
+         display: none; 
+     } 
+     fieldset { 
+         width: 250px; 
+     } 
+     .contact-form .input-text { 
+         width: 250px; 
+     } 
+     .btn-send { 
+         width: 250px; 
+     } 
+
+
+
+ 
+ 
+  

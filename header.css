@@ -1,0 +1,97 @@
+.site-navigation ul { 
+   background: #eee; 
+   list-style: none; 
+   margin: 0; 
+   padding: 0; 
+   display: flex; 
+   justify-content: space-around; 
+ } 
+ .site-navigation a { 
+   color: #333; 
+   display: block; 
+   text-decoration: none; 
+   text-align: center; 
+   padding: 1rem; 
+ } 
+ .site-navigation a:hover { 
+   background: #d5d5d5; 
+ } 
+ body,.cube { 
+ 	color: rgb(6, 106, 117); 
+ 	text-transform: uppercase; 
+ 	font-family: sans-serif; 
+ 	font-size: 100%; 
+ 	background: #F4F6F8; 
+ 	padding: 5px 0 0 0; 
+ } 
+ .flippety h1{ 
+     font-family: 'Finger Paint', cursive; 
+ } 
+ .site-navigation ul { 
+   line-height: 62px; 
+   list-style: none; 
+   margin: 0; 
+   padding: 0; 
+   display: flex; 
+   justify-content: space-around; 
+   font-family: 'Finger Paint', cursive; 
+ } 
+ .site-navigation a { 
+   display: block; 
+   text-decoration: none; 
+   text-align: center; 
+   padding: 1rem; 
+   color:rgb(6, 106, 117); 
+ } 
+ .site-navigation a:hover { 
+   background: #d5d5d5; 
+ } 
+ 
+ 
+ @media all and (max-width: 600px) { 
+   .site-navigation ul { 
+     justify-content:space-around; 
+     padding: 0; 
+   } 
+   div.cube{ 
+     width:100%; 
+   } 
+ } 
+ .cube { 
+ 	width: 84%; 
+ 	text-align: center; 
+ 	margin: 0 auto; 
+ 	height: 90px; 
+ 	transition: transform .33s;  
+ 	transform-style: preserve-3d;  
+ } 
+ .flippety,.flop,.site-navigation { 
+ 	background: rgb(247, 247, 247); 
+ 	border: 1px solid rgba(147, 184, 189, .8); 
+ 	border-radius: 5px; 
+ 	box-shadow: 0 5px 20px rgba(105, 108, 109, .3), 0 0 8px 5px rgba(208, 223, 226, .4) inset; 
+ 	height: 100px; 
+ } 
+ .flippety { 
+ 	transform: translateZ(50px); 
+ } 
+ .flop { 
+ 	transform: rotateX(-90deg) translateZ(-50px); 
+ } 
+ .cube:hover { 
+ 	transform: rotateX(89deg); 
+ } 
+ .question { 
+
+     text-align: center;      position: relative; 
+     top: 40px; 
+     margin:auto; 
+     font-family: 'Finger Paint', cursive; 
+ } 
+
+.text1 { 
+
+     text-align: center;      position: relative;  
+     margin:auto; 
+     font-family: 'Finger Paint', cursive; 
+ } 
