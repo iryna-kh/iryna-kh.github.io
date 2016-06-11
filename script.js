@@ -11,9 +11,6 @@ $(function() {
  
  
  
- 
- 
- 
  $(function() { 
  
  
@@ -91,51 +88,7 @@ $(function() {
 
 
 
-$('#fortnight').remove(); 
  
- 
- 		$.get('http://api.openweathermap.org/data/2.5/forecast/daily?q=' + city + '&APPID=' + APPID + '&cnt=14', function(data) { 
- 
- 
- 			function fortnight(index) { 
- 				return '<p id="clouddescr">' + data.list[index].weather[0].description + '</p><img id="cloudimg" src="http://openweathermap.org/img/w/' + data.list[index].weather[0].icon + '.png"><p id="temp">' + (data.list[index].main.temp - 273.15).toFixed(2) + '</p><p id="pressure">' + data.list[index].main.pressure + '</p><p id="humidity">' + data.list[index].main.humidity + '</p><p id="windspeed">' + data.list[index].wind.speed + '</p>' 
- 			} 
- 			 
- 			$('#tab-3').append('<div id="fortnight" style="width:' + (screen.width-350) + 'px"></div>'); 
- 
- 
- 			for (var i = 0; i < data.list.length; i++) { 
- 
- 
- 				if (i == 0) { 
- 					$('#weathervals').append('<div id="date">' + data.list[i].dt_txt.substring(0, 10) + '<br></div>'); 
- 					$('#date:last-child').append('<div class="time" id="time-' + i + '" style="border-top: 1px solid #898989">' + data.list[i].dt_txt.substring(10, 16) + '</div>'); 
- 					$('#time-' + i).append('<div id="weathval"></div>').append(weathval(i)); 
- 					continue; 
- 				} 
- 
- 
- 				if (data.list[i].dt_txt.substring(0, 10) != data.list[i-1].dt_txt.substring(0, 10)) { 
- 					$('#weathervals').append('<div id="date">' + data.list[i].dt_txt.substring(0, 10) + '<br></div>'); 
- 					$('#date:last-child').append('<div class="time" id="time-' + i + '" style="border-top: 1px solid #898989">' + data.list[i].dt_txt.substring(10, 16) + '</div>'); 
- 					$('#time-' + i).append('<div id="weathval"></div>').append(weathval(i)); 
- 				} 
- 
- 
- 				if (data.list[i].dt_txt.substring(0, 10) == data.list[i-1].dt_txt.substring(0, 10)) { 
- 					$('#date:last-child').append('<div class="time" id="time-' + i + '" style="border-left: 1px solid #898989; border-top: 1px solid #898989">' + data.list[i].dt_txt.substring(10, 16) + '</div>'); 
- 					$('#time-' + i).append('<div id="weathval"></div>').append(weathval(i));	 
- 				} 
- 			} 
- 
- 
- 		}, 'json').done(function() { 
- 			console.log('Request completed successfully'); 
- 		}).fail(function() { 
- 			console.log('Request is failure'); 
-});  
- 
- 	}); 
 
 
 
