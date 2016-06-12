@@ -1,4 +1,3 @@
- 
 .content{ 
      margin-bottom:200px; 
  } 
@@ -51,7 +50,7 @@
      animation-fill-mode:forwards; 
      animation-iteration-count: 1; 
  } 
-
+ .parent3{ 
      display:block; 
      position:relative; 
      top:60px; 
@@ -60,7 +59,7 @@
      animation-fill-mode:forwards; 
      animation-iteration-count: 1; 
  } 
- .parent4{ 
+ /*.parent4{ 
      display:block; 
      position:relative; 
      top:60px; 
