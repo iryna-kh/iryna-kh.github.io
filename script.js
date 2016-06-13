@@ -11,7 +11,10 @@ $(function() {
  
  
  
+<<<<<<< HEAD
  
+=======
+>>>>>>> 6ce2bfa5685a45aa075e6e2bd287cd002edc048c
  $(function() { 
  
  
@@ -78,6 +81,7 @@ $(function() {
  			console.log('Request completed successfully'); 
  		}).fail(function() { 
  			console.log('Request is failure'); 
+<<<<<<< HEAD
  		}); 
  
  
@@ -85,3 +89,24 @@ $(function() {
  
  	}); 
 }); 
+=======
+});  
+ 
+ 	}); 
+});
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+>>>>>>> 6ce2bfa5685a45aa075e6e2bd287cd002edc048c
