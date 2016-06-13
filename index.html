@@ -2,13 +2,253 @@
 <html>
  <head>
      <meta charset="utf-8">
-     
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Гарного дня!</title> 
+    <meta charset="utf-8"> 
+     <link rel="stylesheet" href="main.css">
+     <link rel="stylesheet" href="header.css"> 
+     <link rel="stylesheet" href="form.css">
+     <link rel="shortcut icon" href="/images/favicon/favicon.png"> 
+     <link rel="shortcut icon" href="images/favicon/favicon.png"> 
+     <link href='https://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet'> 
+     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"> 
+     <link rel="stylesheet" href="css/bootstrap.css">
+     <link rel="stylesheet" href="css/font-awesome.css">
+     <link rel="stylesheet" href="css/style.css">
+     <script src="//code.jquery.com/jquery-3.0.0.min.js"></script> 
+     <script src="//code.jquery.com/jquery-migrate-3.0.0.min.js"></script> 
+     <link rel="stylesheet" type="text/css" href="style.css"> 
+ 	<script type="text/javascript" src="jquery-3.0.0.js"></script> 
+ 	<script type="text/javascript" src="script.js"></script> 
+     <script src="https://code.jquery.com/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
  
  </head>
 
   <body bgcolor="#096628L">
                  
+     <div class="loader"></div> 
+	  <div class="cube"> 
+      <div class="flippety"> 
+	      <h1>Mеню</h1> 
+     </div> 
+     <div class="flop"> 
+	      <nav class="site-navigation"> 
+           <ul> 
+            <li><a href="#land">Домашня</a></li> 
+            <li><a href="#pogoda">Погода</a></li> 
+             <li><a href="#podii">Будь у курсі подій</a></li> 
+             <li><a href="#wrap">Контактна інформація</a></li> 
+           </ul> 
+         </nav> 
+     </div> 
+          </div>
+     <div> 
      
+     </div>
+     <div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">Українська</button>
+  <button type="button" class="btn btn-default">Англійcька</button>
+  <button type="button" class="btn btn-default">Французька</button>
+</div>
+      <p>   </p>
+      
+  <div id="land" class="content">
+     <div class="col-md-5"> 
+         <div> <img src="logo.jpg" align="left" alt="Logo">  </div>
+     </div>
+     <div class="col-md-4">
+     
+             <h2 class="text1" color="SteelBlue"> ТоЧниЙ ПроГноЗ </h2>
+        <p>    </p>
+         <form> <center>
+ 		<label for="cityname" class="text1"><h6>Введіть назву населеного пункту:</h6></label> 
+ 		<input type="text" id="cityname" size="20"/> 
+ 		<input type="button" id="send" value="Пошук" /> 
+             </center>
+ 	</form> 
+     </div>
+     <div class="col-md-3">
+             <div> <A href="http://www.dilovamova.com/"><IMG width=200 height=250 border=0 alt="Календар свят і подій. Листівки, вітання та побажання" title="Календар свят і подій. Листівки, вітання та побажання" src="http://www.dilovamova.com/images/wpi.cache/informer/informer_200_02.png">
+                 </IMG>
+                 </A>
+                <p>   </p>
+                 <!-- PROext: Currency Imformer Begin -->
+<a href='http://www.proext.com' target=_top>
+<img src='http://www.proext.com/export/curr/4usd.png' width=108 height=51 border=0 alt='Курси валют'></a>
+<!-- PROext: Currency Imformer End -->
+         </div>
+         </div> 
+    
+
+ </div>
+   <p>   </p>
+ 
+ 
+  <div id="pogoda" class="container"> 
+     
+
+	    	<div class="col-md-8"> 
+                <h4>Погода у населеному пункті <font color="#FF0000"><span id="selectedcity"></span></font> </h4>
+                <section>
+
+                    <div id="tabs-container"> 
+     	<ul class="tabs-menu"> 
+            <li class="current"><a href="#tab-1">Погода на цей час</a></li> 
+         	<li><a href="#tab-2">Погода на 5 днів</a></li> 
+            <li><a href="#tab-3">Погода на 2 тижні </a></li>
+     	</ul> 
+ 	</div> 
+     <div class="tab"> 
+         <div id="tab-1" class="tab-content"> 
+         	<div id="weatherprop"> 
+ 	        	<p><b>Хмарність та опади:</b></p><br>
+                <left><img  src="foto.jpg" width=280 height=204 border=0 alt='ПОГОДА'></left>
+ 	        	<p><b>Температура повітря, &#8451;:</b></p> 
+ 	        	<p><b>Атмосферний тиск, мм.рт.ст.:</b></p> 
+ 	        	<p><b>Вологість повітря, %:</b></p> 
+ 	        	<p><b>Швидкість вітру, м/с:</b></p> 
+                
+         	</div> 
+         	<div id="weatherval"> 
+ 	        	<p id="clouddescr"></p> 
+ 				<img id="cloudimg"> 
+ 				<p id="temp"></p> 
+ 				<p id="pressure"></p> 
+ 				<p id="humidity"></p> 
+ 				<p id="windspeed"></p> 
+         	</div> 
+         </div> 
+         <div id="tab-2" class="tab-content"> 
+             <div id="weatherprop"> 
+ 	        	<p><b>Хмарність та опади:</b></p><br> 
+ 	        	<p><b>Температура повітря, &#8451;:</b></p> 
+ 	        	<p><b>Атмосферний тиск, мм.рт.ст.:</b></p> 
+ 	        	<p><b>Вологість повітря, %:</b></p> 
+ 	        	<p><b>Швидкість вітру, м/с:</b></p><br> 
+         	</div> 
+         	 
+         </div> 
+         <div id="tab-3" class="tab-content"> 
+             <div id="fortnight"> 
+ 	        	<p><b>Хмарність та опади:</b></p><br> 
+ 	        	<p><b>Температура повітря, &#8451;:</b></p> 
+ 	        	<p><b>Атмосферний тиск, мм.рт.ст.:</b></p> 
+ 	        	<p><b>Вологість повітря, %:</b></p> 
+ 	        	<p><b>Швидкість вітру, м/с:</b></p><br> 
+         	</div> 
+         	 
+         </div> 
+     </div> 
+    
+                </section>
+     </div>
+    
+    
+    <aside class="col-md-4"> 
+    <div class="parent parent1"> 
+         <div class="flex-container"> 
+             <div class="flex-item"><a href="http://horo.tochka.net/ua/horoscopes/aries/" target="_blank"><img src="goroskop1.jpg"  alt="Aries"></a></div> 
+             <div class="flex-item"><a href="http://horo.tochka.net/ua/horoscopes/taurus/" target="_blank"><img src="goroskop2.jpg" alt="Taurus"></a></div>
+             <div class="flex-item"><a href="http://http://horo.tochka.net/ua/horoscopes/gemini/" target="_blank"><img src="goroskop3.jpg"  alt="Gemini"></a></div> 
+             <div class="flex-item"><a href="http://horo.tochka.net/ua/horoscopes/cancer/" target="_blank"><img src="goroskop4.jpg" alt="Cancer"></a></div>
+         </div>
+         </div>
+         <div class="parent parent2"> 
+         <div class="flex-container"> 
+             <div class="flex-item"><a href="http://horo.tochka.net/ua/horoscopes/leo/" target="_blank"><img src="goroskop5.jpg"  alt="Leo"></a></div> 
+             <div class="flex-item"><a href="http://horo.tochka.net/ua/horoscopes/virgo/" target="_blank"><img src="goroskop6.jpg" alt="Virgo"></a></div>
+             <div class="flex-item"><a href="http://horo.tochka.net/ua/horoscopes/libra/" target="_blank"><img src="goroskop7.jpg"  alt="Libra"></a></div> 
+             <div class="flex-item"><a href="http://horo.tochka.net/ua/horoscopes/scorpio/" target="_blank"><img src="goroskop8.jpg" alt="Scorpio"></a></div>
+           </div>
+           </div>
+          <div class="parent parent3">
+             <div class="flex-container"> 
+                 <div class="flex-item"><a href="http://horo.tochka.net/ua/horoscopes/sagittarius/" target="_blank"><img src="goroskop9.jpg"  alt="Sagittarius"></a></div> 
+                 <div class="flex-item"><a href="http://horo.tochka.net/ua/horoscopes/capricorn/" target="_blank"><img src="goroskop10.jpg" alt="Capricorn"></a></div>
+                 <div class="flex-item"><a href="http://horo.tochka.net/ua/horoscopes/aquarius/" target="_blank"><img src="goroskop11.jpg"  alt="Aquariuse"></a></div> 
+                 <div class="flex-item"><a href="http://horo.tochka.net/ua/horoscopes/pisces/" target="_blank"><img src="goroskop12.jpg" alt="Pisces"></a></div>
+         </div> 
+         </div>  
+ 
+ 		    	</aside> 
+ 		</div> 
+
+     <div id="podii"> </div>
+     <div id="think" class="container background-white wow fadeInUp" data-wow-duration="2s"> 
+         <div class="row"> 
+             <h3 class="heading-main brown-dark-text text-uppercase"> Не пропустіть!!!!</h3> 
+             <div id="carousel" class="carousel slide"> 
+                 <div class="carousel-inner"> 
+                     <div class="item active"> 
+                         <img src="white-box.png" alt="favourite quotes"> 
+                         <div class="carousel-caption brown-dark-text"> 
+                             <h4> Потрібно зазначити, що на сьогоднішній день, щоб бути «модним», слід мати хороше почуття стилю.</h4> 
+                             <a href="http://http://lady.tochka.net/ua/moda/" target="_blank"><img src="moda.png" width="150"
+    height="110" alt="Мода"></a>
+                             
+                             
+                         </div> 
+                     </div> 
+                     <div class="item"> 
+                         <img src="white-box.png" alt="favourite quotes"> 
+                         <div class="carousel-caption brown-dark-text"> 
+                             <h4> Сучасне суспільтво вимагає від нас постійно бути у центрі подій. А ти знаєш найсвіжіші новини?</h4> 
+                             <a href="http://ua.korrespondent.net//" target="_blank"><img src="novunu.png" width="150"
+    height="110" alt="Новини"></a> 
+                         </div> 
+                     </div> 
+                     <div class="item"> 
+                         <img src="white-box.png" alt="favourite quotes"> 
+                         <div class="carousel-caption brown-dark-text"> 
+                             <h4> Народ керує державою, а не держава народом. Пам'ятай це!!! </h4> 
+                             <a href="http://news.liga.net/ua/all/politics///" target="_blank"><img src="Politics.png" width="150"
+    height="110" alt="Полiтика"></a>
+                         </div> 
+                     </div> 
+                     <div class="item"> 
+                         <img src="white-box.png" alt="favourite quotes"> 
+                         <div class="carousel-caption brown-dark-text"> 
+                             <h4> Любиш спорт? Тоді тобі сюди! </h4> 
+                             <a href="http://sport.ua" target="_blank"><img src="Sport.png" width="150"
+    height="110" alt="Полiтика"></a 
+                         </div> 
+                     </div> 
+                 </div> 
+                 <a href="#carousel" class="left carousel-control" data-slide="prev"> 
+                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
+                 </a> 
+                 <a href="#carousel" class="right carousel-control" data-slide="next"> 
+                     <span class="glyphicon glyphicon-chevron-right"></span> 
+                 </a> 
+             </div> 
+         </div> 
+     </div> 
+     
+     
+  
+   <div id="#wrap"> </div> 
+   <footer class="container"> 
+       
+        			<div class="container"> 
+ 				<div align="CENTER"> 
+ 				<a href="http://facebook.com" target="_blank"><img src="1.png" width="50"
+    height="30" alt="Facebook"></a>
+                    <a href="http://twitter.com" target="_blank"><img src="2.jpg" width="50"
+    height="30" alt="Twitter"></a>
+                    <a href="http://instagram.com" target="_blank"><img src="3.jpg" width="50"
+    height="30" alt="Instagram"></a>
+ 				<div class="pluso" data-background="transparent" data-options="big,round,line,horizontal,nocounter,theme=04" data-services="vkontakte,odnoklassniki,facebook,twitter,google,email" id="socicons"></div>	 
+ 			</div> 
+       </div>
+        <center> &copy; Iruna-Kh, 2016</center>  
+
+    </footer>
+             
+         </div>
+      </div>
+    
+                   
  </body>
 </html>
