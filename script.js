@@ -11,14 +11,11 @@ $(function() {
  
  
  
-<<<<<<< HEAD
- 
-=======
->>>>>>> 6ce2bfa5685a45aa075e6e2bd287cd002edc048c
+
  $(function() { 
  
  
- 	var APPID = "6dd5d55e84742b720ad18912a82e4c96"; 
+ 	var APPID = "9566092f1eeb07c3ba76263ae7e0b464"; 
  	 
  	$('#send').click(function() { 
  		var cityname = $('#cityname').val(); 
@@ -81,16 +78,7 @@ $(function() {
  			console.log('Request completed successfully'); 
  		}).fail(function() { 
  			console.log('Request is failure'); 
-<<<<<<< HEAD
  		}); 
- 
- 
- 
- 
- 	}); 
-}); 
-=======
-});  
  
  	}); 
 });
